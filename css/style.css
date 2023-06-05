@@ -7,5 +7,96 @@
 body {
   font-family: "Geologica", sans-serif;
   background-color: #79E0EE;
-  color: #f0ffe8;
+  color: #76cc47;
+  font-size: 16px;
+  font-size: 62.5%;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 1.5rem;
+  z-index: 1000;
+  border: 1px solid transparent;
+  background: none;
+}
+.burger-btn:focus {
+  border: 1px solid #76cc47;
+  outline: none;
+  border-radius: 8px;
+}
+.burger-btn:hover .burger-btn__bars::before,
+.burger-btn:hover .burger-btn__bars::after {
+  width: 100%;
+}
+.burger-btn__box {
+  position: relative;
+  width: 50px;
+  height: 40px;
+}
+.burger-btn__bars, .burger-btn__bars::before, .burger-btn__bars::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  right: 0;
+  top: 0;
+  background-color: #76cc47;
+  transition: width 0.3s;
+}
+.burger-btn__bars {
+  width: 100%;
+}
+.burger-btn__bars::before {
+  width: 60%;
+  top: 13px;
+}
+.burger-btn__bars::after {
+  width: 30%;
+  top: 27px;
+  transition-delay: 0.05s;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/6816860/pexels-photo-6816860.jpeg?cs=srgb&dl=pexels-gustavo-fring-6816860.jpg&fm=jpg");
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.nav__hero {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav__hero--title {
+  font-size: 5em;
+  max-width: 1200px;
+  margin-bottom: 30px;
+  margin-top: 300px;
+}
+.nav__hero--text {
+  font-size: 2.5em;
+  max-width: 1200px;
+}
+
+.white-space::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  transform: skew(60deg);
+  height: 30px;
+  width: 50%;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
