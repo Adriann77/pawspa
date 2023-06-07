@@ -32,16 +32,16 @@ body {
 }
 .burger-btn__box {
   position: relative;
-  width: 50px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
 }
 .burger-btn__bars, .burger-btn__bars::before, .burger-btn__bars::after {
   position: absolute;
   content: "";
-  height: 3px;
+  height: 4px;
   right: 0;
   top: 0;
-  background-color: #76cc47;
+  background-color: #f7f7f7;
   transition: width 0.3s;
 }
 .burger-btn__bars {
@@ -49,54 +49,42 @@ body {
 }
 .burger-btn__bars::before {
   width: 60%;
-  top: 13px;
+  top: 23px;
 }
 .burger-btn__bars::after {
   width: 30%;
-  top: 27px;
+  top: 46px;
   transition-delay: 0.05s;
 }
 
-.nav {
+.header {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
   background-image: url("https://images.pexels.com/photos/6816860/pexels-photo-6816860.jpeg?cs=srgb&dl=pexels-gustavo-fring-6816860.jpg&fm=jpg");
   background-position: center;
-  background-size: cover;
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-size: 100% 100%;
+  background-attachment: scroll;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.nav__hero {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.header__title {
+  position: relative;
+  color: #79E0EE;
+  font-family: "Lobster", cursive;
+  font-size: 6em;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-right: 690px;
 }
-.nav__hero--title {
-  font-size: 5em;
-  max-width: 1200px;
-  margin-bottom: 30px;
-  margin-top: 300px;
-}
-.nav__hero--text {
-  font-size: 2.5em;
-  max-width: 1200px;
-}
-
-.white-space::after {
-  content: "";
+.header__title::after {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: -20px;
-  transform: skew(60deg);
-  height: 30px;
-  width: 50%;
-  background-color: white;
+  height: 2px;
+  width: 120%;
+  content: "";
+  background-color: #f7f7f7;
 }/*# sourceMappingURL=style.css.map */
