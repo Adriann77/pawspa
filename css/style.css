@@ -64,6 +64,62 @@ body {
   top: 26px;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(100%);
+  background-image: linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184));
+  z-index: 100;
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  font-size: 2.4rem;
+}
+
+.nav--active {
+  transform: translateX(0%);
+}
+
+.nav__item {
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #fff;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+}
+
+.nav__item:hover::before {
+  transform: scaleY(1);
+}
+
+@keyframes navItemsAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.nav-items-animation {
+  animation: navItemsAnimation 1s;
+}
+
 .header {
   position: relative;
   background-image: url("/img/yorkshire-terrier-790362_640.jpg");
@@ -71,6 +127,7 @@ body {
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 .header__shadow {
   background-color: rgba(0, 0, 0, 0.1);
@@ -116,10 +173,6 @@ body {
   .burger-btn {
     padding: 2.5rem;
   }
-  .burger-btn__box {
-    width: 50px;
-    height: 60px;
-  }
   .header__title {
     font-size: 6rem;
   }
@@ -136,5 +189,8 @@ body {
   }
   .header__button {
     left: 30%;
+  }
+  .nav {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
