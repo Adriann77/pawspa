@@ -94,7 +94,7 @@ body {
   text-decoration: none;
 }
 .nav__item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -149,15 +149,31 @@ body {
     bottom: 30px;
     padding: 3rem;
     background-color: #333;
-    border: 1px solid;
+    border: 2px solid royalblue;
     border-radius: 8px;
     background: none;
     cursor: pointer;
     &--text {
       font-size: 3rem;
+      text-decoration: none;
+      color: royalblue;
     }
   }
 }
+
+// MAIN
+
+// section-aboutus
+
+.main {
+  .about-us {
+    position: relative;
+    background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+    
+  }
+}
+
+
 
 // MEDIA
 
@@ -177,10 +193,10 @@ body {
   }
 }
 
+
 @media (min-width: 576px) {
   .burger-btn {
     padding: 2.5rem;
-    
   }
 
   .header {
@@ -212,7 +228,7 @@ body {
     }
   }
 
-  .nav{
+  .nav {
     font-size: 4rem;
   }
 }
