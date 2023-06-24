@@ -1,0 +1,65 @@
+@import 'mixins';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  //   font-family: 'Dancing Script', cursive;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.hamburger {
+  padding: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+
+  &__box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+  &__inner {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__inner,
+  &__inner::before,
+  &__inner::after {
+    @include navBtn;
+    left: 0;
+    transition: .3s;
+  }
+
+  &__inner::before {
+    top: -10px;
+  }
+  &__inner::after {
+    top: 10px;
+  }
+  
+}
+  .hamburger--active .hamburger__inner{
+    background-color: transparent;
+  }
+
+  .hamburger--active .hamburger__inner::after{
+    transform: translateY(-10px) rotate(-315deg);
+  }
+  .hamburger--active .hamburger__inner::before{
+    transform: translateY(10px) rotate(315deg);
+  }

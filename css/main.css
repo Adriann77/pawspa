@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+.hamburger {
+  padding: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+.hamburger__box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+.hamburger__inner {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger__inner, .hamburger__inner::before, .hamburger__inner::after {
+  width: 100%;
+  position: absolute;
+  height: 3px;
+  content: "";
+  background-color: black;
+  left: 0;
+  transition: 0.3s;
+}
+.hamburger__inner::before {
+  top: -10px;
+}
+.hamburger__inner::after {
+  top: 10px;
+}
+
+.hamburger--active .hamburger__inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::after {
+  transform: translateY(-10px) rotate(-315deg);
+}
+
+.hamburger--active .hamburger__inner::before {
+  transform: translateY(10px) rotate(315deg);
+}/*# sourceMappingURL=main.css.map */
