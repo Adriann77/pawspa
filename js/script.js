@@ -4,4 +4,4 @@ const handleNav = () =>{
      hamburger.classList.toggle('hamburger--active')
 }
 
-document.addEventListener('click', handleNav)
+hamburger.addEventListener('click', handleNav)
