@@ -1,3 +1,30 @@
+@charset "UTF-8";
+.nav__item--animation a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  background-color: royalblue;
+  transition: all 0.3s;
+}
+.nav__item--animation a::before {
+  content: "🐾";
+  color: royalblue;
+  opacity: 0;
+  left: -5px;
+  transition: all 0.3s;
+  transform-origin: left;
+}
+
+.nav__item--animation:hover a::after,
+.nav__item--animation:hover a::before {
+  opacity: 1;
+  width: 100%;
+  transform-origin: right;
+}
+
 *,
 *::after,
 *::before {
@@ -13,6 +40,7 @@ html {
 
 body {
   font-family: "Tajawal", sans-serif;
+  overflow: hidden;
 }
 
 .nav__title {
@@ -82,21 +110,26 @@ body {
   position: absolute;
   height: 100vh;
   background-color: rgba(46, 46, 46, 0.1803921569);
-  width: 35%;
+  width: 40%;
   right: 0;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 70px;
+}
+.nav__item {
+  position: relative;
+  text-transform: uppercase;
+  list-style: none;
 }
 .nav__item a {
   text-decoration: none;
-  text-transform: uppercase;
-  list-style: none;
-  font-size: 2rem;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
   color: royalblue;
+  padding: 0.5em;
 }
 
 .nav--active {

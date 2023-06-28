@@ -1,0 +1,31 @@
+.nav__item--animation {
+  a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    background-color: royalblue;
+    transition: all .3s;
+    
+  }
+
+  a::before {
+    content: '🐾';
+    color: royalblue;
+    opacity: 0;
+    left: -5px;
+    transition: all .3s;
+    transform-origin: left;
+  }
+}
+
+.nav__item--animation:hover {
+  a::after,
+  a::before {
+    opacity: 1;
+    width: 100%;
+    transform-origin: right;
+  }
+}

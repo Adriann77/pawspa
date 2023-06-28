@@ -17,9 +17,10 @@ html {
 body {
   //   font-family: 'Dancing Script', cursive;
   font-family: 'Tajawal', sans-serif;
+  overflow: hidden;
 }
 
-.nav__title{
+.nav__title {
   position: absolute;
 }
 
@@ -28,7 +29,7 @@ body {
   display: none;
 }
 
-.hamburger{
+.hamburger {
   position: absolute;
   top: 13px;
   right: 13px;
@@ -37,13 +38,12 @@ body {
   background: none;
   z-index: 500;
 
-  &:focus{
+  &:focus {
     border: 1px solid black;
     border-radius: 5px;
   }
-  
 
-  &__box{
+  &__box {
     display: flex;
     position: relative;
     justify-content: center;
@@ -52,77 +52,73 @@ body {
     height: 30px;
   }
 
-  &__inner, &__inner::before, &__inner::after{
+  &__inner,
+  &__inner::before,
+  &__inner::after {
     position: absolute;
     background-color: black;
     height: 3px;
     right: 0;
     width: 100%;
-    transition: all .3s linear;
-   
+    transition: all 0.3s linear;
   }
 
-  &__inner::before, &__inner::after{
+  &__inner::before,
+  &__inner::after {
     content: '';
   }
-  
-  &__inner::before{
+
+  &__inner::before {
     top: -10px;
   }
 
-  &__inner::after{
+  &__inner::after {
     top: 10px;
   }
-
 }
 
-.hamburger--active .hamburger__inner{
+.hamburger--active .hamburger__inner {
   background-color: transparent;
 }
 
-.hamburger--active .hamburger__inner::before{
-  transform: translateY(10px) rotate(-315deg) ;
+.hamburger--active .hamburger__inner::before {
+  transform: translateY(10px) rotate(-315deg);
 }
-.hamburger--active .hamburger__inner::after{
-  transform:translateY(-10px) rotate(315deg) ;
+.hamburger--active .hamburger__inner::after {
+  transform: translateY(-10px) rotate(315deg);
 }
 
-.nav{
-  
+.nav {
   transform: translateX(100%);
-  transition: transform .3s;
-  
- 
-  &__list{
+  transition: transform 0.3s;
+
+  &__list {
     position: absolute;
     height: 100vh;
     background-color: #2e2e2e2e;
-    width: 35%;
+    width: 40%;
     right: 0;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
-   
-   
+    gap: 70px;
   }
 
-  &__item{
-  a{
-    text-decoration: none;
+  &__item {
+    position: relative;
     text-transform: uppercase;
     list-style: none;
-    font-size: 2rem;
-    color: royalblue;
+    a {
+      text-decoration: none;
+      flex-wrap: wrap;
+      font-size: 1.5rem;
+      color: royalblue;
+      padding: 0.5em;
+    }
   }
-  }
-
-
 }
-.nav--active{
+.nav--active {
   transform: translateX(0);
-  
-  
 }
