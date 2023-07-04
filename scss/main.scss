@@ -64,13 +64,12 @@ body {
       font-size: 26px;
       text-transform: uppercase;
       cursor: pointer;
-      transition: padding .3s;
+      transition: padding 0.3s;
 
-      &:hover{
+      &:hover {
         font-size: 30px;
       }
     }
-
   }
 
   &--active {
@@ -97,20 +96,20 @@ body {
     transform: translateX(-50%);
     z-index: 1001;
     cursor: pointer;
-    padding: 1em;
-    width: 120px;
-    height: 60px;
+    padding: 2em;
+
+    background-color: rgba(40, 57, 119, 0.8);
     border-radius: 8px;
     border: 2px solid royalblue;
-    background-color: transparent;
-    transition: background-color .3s;
-    &--text{
-        font-size: 2rem;
-        color: goldenrod;
+
+    transition: background-color 0.3s;
+    &--text {
+      font-size: 2rem;
+      color: white;
     }
 
-    &:hover{
-        background-color:  rgba(40, 57, 119, 0.9);
+    &:hover {
+      background-color: rgba(40, 57, 119, 0.9);
     }
   }
 }

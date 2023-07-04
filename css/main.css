@@ -133,17 +133,15 @@ body {
   transform: translateX(-50%);
   z-index: 1001;
   cursor: pointer;
-  padding: 1em;
-  width: 120px;
-  height: 60px;
+  padding: 2em;
+  background-color: rgba(40, 57, 119, 0.8);
   border-radius: 8px;
   border: 2px solid royalblue;
-  background-color: transparent;
   transition: background-color 0.3s;
 }
 .header__btn--text {
   font-size: 2rem;
-  color: goldenrod;
+  color: white;
 }
 .header__btn:hover {
   background-color: rgba(40, 57, 119, 0.9);
