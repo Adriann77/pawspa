@@ -19,13 +19,30 @@ body {
   font-family: 'Tajawal', sans-serif;
 }
 
+//TITLE
+
+.page__title {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: royalblue;
+  letter-spacing: 2px;
+  z-index: 1000;
+}
+
+//NAV
+
 .nav {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: #2e2e2e2e;
-  padding: 2em;
+  background-color: rgba(20, 106, 164, 0.4);
+  padding: 2.3em;
+  transition: transform 0.3s;
+  transform: translateX(100%);
   &__list {
     position: relative;
     display: flex;
@@ -34,17 +51,66 @@ body {
     justify-content: space-evenly;
   }
 
- 
-
   &__item {
     list-style: none;
     text-align: center;
 
     a {
       text-decoration: none;
-      color: royalblue;
-      font-size: 16px;
+      color: white;
+      padding: 1em;
+      background-color: rgba(40, 57, 119, 0.9);
+      border-radius: 8px;
+      font-size: 26px;
       text-transform: uppercase;
+      cursor: pointer;
+      transition: padding .3s;
+
+      &:hover{
+        font-size: 30px;
+      }
+    }
+
+  }
+
+  &--active {
+    transform: translateX(0);
+  }
+}
+
+//header
+
+.header {
+  height: 100vh;
+  &__bg {
+    position: relative;
+    background-image: url(/img/dog-734688_1920.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+  &__btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    cursor: pointer;
+    padding: 1em;
+    width: 120px;
+    height: 60px;
+    border-radius: 8px;
+    border: 2px solid royalblue;
+    background-color: transparent;
+    transition: background-color .3s;
+    &--text{
+        font-size: 2rem;
+        color: goldenrod;
+    }
+
+    &:hover{
+        background-color:  rgba(40, 57, 119, 0.9);
     }
   }
 }
