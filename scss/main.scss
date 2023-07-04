@@ -12,8 +12,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -21,114 +19,32 @@ body {
   font-family: 'Tajawal', sans-serif;
 }
 
-.nav__title {
-  position: fixed;
-  top: 13px;
-  left: 13px;
-  font-family: 'Dancing Script', cursive;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  color: orange;
-}
-
-// nav
-.nav__desktop {
-  display: none;
-}
-
-.hamburger {
-  position: absolute;
-  top: 13px;
-  right: 13px;
-  padding: 1em;
-  border: 1px solid transparent;
-  background: none;
-  z-index: 500;
-
-  &:focus {
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-
-  &__box {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-  }
-
-  &__inner,
-  &__inner::before,
-  &__inner::after {
-    position: absolute;
-    background-color: black;
-    height: 3px;
-    right: 0;
-    width: 100%;
-    transition: all 0.3s linear;
-  }
-
-  &__inner::before,
-  &__inner::after {
-    content: '';
-  }
-
-  &__inner::before {
-    top: -10px;
-  }
-
-  &__inner::after {
-    top: 10px;
-  }
-}
-
-.hamburger--active .hamburger__inner {
-  background-color: transparent;
-}
-
-.hamburger--active .hamburger__inner::before {
-  transform: translateY(10px) rotate(-315deg);
-}
-.hamburger--active .hamburger__inner::after {
-  transform: translateY(-10px) rotate(315deg);
-}
-
 .nav {
-  transform: translate(100%);
-  transition: transform 0.3s;
-  max-width: 100%;
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #2e2e2e2e;
+  padding: 2em;
   &__list {
-    position: absolute;
-    height: 100vh;
-    background-color: rgba(200, 104, 30, 0.4);
-    width: 40%;
-    right: 0;
-    top: 0;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
     flex-direction: column;
-    gap: 40px;
+    justify-content: space-evenly;
   }
+
+ 
 
   &__item {
-    position: relative;
-    text-transform: uppercase;
     list-style: none;
     text-align: center;
+
     a {
       text-decoration: none;
-      
-      text-overflow: wrap;
-      font-size: 1.5rem;
       color: royalblue;
-      
+      font-size: 16px;
+      text-transform: uppercase;
     }
   }
-}
-.nav--active {
-  transform: translateX(0);
 }

@@ -1,31 +1,56 @@
-.nav__item--animation {
-  a::after {
+//burger icon 
+
+.hamburger {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  z-index: 1000;
+
+  &:focus {
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+
+  &__box {
+    position: relative;
+    width: 25px;
+    height: 15px;
+  }
+
+  &__inner,
+  &__inner::before,
+  &__inner::after {
+    @include burgerBtn;
+  }
+
+  &__inner {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__inner::before {
     content: '';
-    position: absolute;
-    height: 2px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
-    background-color: royalblue;
-    transition: all .3s;
-    
+    top: -8px;
+    background-color: black;
+  }
+  &__inner::after {
+    content: '';
+    top: 8px;
+    background-color: black;
   }
 
-  a::before {
-    content: '🐾';
-    color: royalblue;
-    opacity: 0;
-    left: -5px;
-    transition: all .3s;
-    transform-origin: left;
-  }
-}
-
-.nav__item--animation:hover {
-  a::after,
-  a::before {
-    opacity: 1;
-    width: 100%;
-    transform-origin: right;
+  &--active {
+    .hamburger__inner {
+      background-color: transparent;
+    }
+    .hamburger__inner:after {
+      transform: translateY(-8px) rotate(-315deg);
+    }
+    .hamburger__inner::before {
+      transform: translateY(8px) rotate(315deg);
+    }
   }
 }

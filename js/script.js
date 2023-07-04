@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger')
 const nav = document.querySelector('.nav')
-const navLinks = document.querySelectorAll('.nav__item')
+const navLinks = document.querySelectorAll('.nav__link')
 
 const handleNav = () => {
   hamburger.classList.toggle('hamburger--active')
