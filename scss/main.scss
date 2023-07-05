@@ -16,7 +16,7 @@ html {
 
 body {
   //   font-family: 'Dancing Script', cursive;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Tajawal';
 }
 
 //TITLE
@@ -44,7 +44,7 @@ body {
   transition: transform 0.3s;
   width: 100%;
   transform: translateX(100%);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   &__list {
     position: relative;
     display: flex;
@@ -117,10 +117,55 @@ body {
   }
 }
 
-//main
 
-// aboutus
+// MAIN
 
-// .aboutus {
+main{
 
-// }
+
+//aboutus 
+
+.aboutus{
+
+    &__box{
+        padding: 1em;
+    }
+
+   &__img{
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 100%;
+   }
+
+   &__title{
+    font-size: 2rem;
+    color: royalblue;
+    margin: 10px auto;
+    text-align: center;
+   }
+   &__text{
+    font-size: 1.5rem;    
+    text-align: center;
+   }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
