@@ -1,4 +1,4 @@
-//burger icon 
+//burger icon
 
 .hamburger {
   position: fixed;
@@ -53,4 +53,20 @@
       transform: translateY(8px) rotate(315deg);
     }
   }
+}
+
+.section-padding {
+  padding: 8rem 2rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.hide {
+  opacity: 0;
 }

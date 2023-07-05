@@ -42,13 +42,16 @@ body {
   background-color: rgba(20, 106, 164, 0.4);
   padding: 2.3em;
   transition: transform 0.3s;
+  width: 100%;
   transform: translateX(100%);
+  backdrop-filter: blur(2px);
   &__list {
     position: relative;
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+    
   }
 
   &__item {
@@ -100,13 +103,11 @@ body {
     background-color: rgba(40, 57, 119, 0.8);
     border-radius: 8px;
     border: 2px solid royalblue;
-
     transition: background-color 0.3s;
     &--text {
       text-decoration: none;
       font-size: 2.3rem;
-      padding: 3em;
-
+        padding: 1em;
       color: white;
     }
 
@@ -120,44 +121,6 @@ body {
 
 // aboutus
 
-.aboutus {
-  padding: 8rem 1em;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+// .aboutus {
 
-  &__box{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 45%;
-    align-items: flex-start;
-    justify-content: center;
-
-    &__img{
-        width: 100%;
-        padding-bottom: 3em;
-        padding-right: 1em;
-        &--second{
-            order: 1;
-            padding-left: 1em;
-        }
-    }
-
-    &__text{
-        text-align: right;
-        font-size: 1.3rem;
-        &--second{
-            text-align: left;
-        }
-    }
-
-    
-
-  }
-
-  
-  
-}
+// }
