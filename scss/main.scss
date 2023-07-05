@@ -16,7 +16,7 @@ html {
 
 body {
   //   font-family: 'Dancing Script', cursive;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Tajawal';
 }
 
 //TITLE
@@ -42,13 +42,16 @@ body {
   background-color: rgba(20, 106, 164, 0.4);
   padding: 2.3em;
   transition: transform 0.3s;
+  width: 100%;
   transform: translateX(100%);
+  backdrop-filter: blur(3px);
   &__list {
     position: relative;
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+    
   }
 
   &__item {
@@ -96,15 +99,15 @@ body {
     transform: translateX(-50%);
     z-index: 1001;
     cursor: pointer;
-    padding: 2em;
-
+    height: 80px;
     background-color: rgba(40, 57, 119, 0.8);
     border-radius: 8px;
     border: 2px solid royalblue;
-
     transition: background-color 0.3s;
     &--text {
-      font-size: 2rem;
+      text-decoration: none;
+      font-size: 2.3rem;
+        padding: 1em;
       color: white;
     }
 
@@ -112,4 +115,57 @@ body {
       background-color: rgba(40, 57, 119, 0.9);
     }
   }
+}
+
+
+// MAIN
+
+main{
+
+
+//aboutus 
+
+.aboutus{
+
+    &__box{
+        padding: 1em;
+    }
+
+   &__img{
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 100%;
+   }
+
+   &__title{
+    font-size: 2rem;
+    color: royalblue;
+    margin: 10px auto;
+    text-align: center;
+   }
+   &__text{
+    font-size: 1.5rem;    
+    text-align: center;
+   }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

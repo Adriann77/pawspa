@@ -48,6 +48,20 @@
   transform: translateY(8px) rotate(315deg);
 }
 
+.section-padding {
+  padding: 8rem 2rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.hide {
+  opacity: 0;
+}
+
 *,
 *::after,
 *::before {
@@ -62,7 +76,7 @@ html {
 }
 
 body {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Tajawal";
 }
 
 .page__title {
@@ -84,7 +98,10 @@ body {
   background-color: rgba(20, 106, 164, 0.4);
   padding: 2.3em;
   transition: transform 0.3s;
+  width: 100%;
   transform: translateX(100%);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 .nav__list {
   position: relative;
@@ -133,16 +150,38 @@ body {
   transform: translateX(-50%);
   z-index: 1001;
   cursor: pointer;
-  padding: 2em;
+  height: 80px;
   background-color: rgba(40, 57, 119, 0.8);
   border-radius: 8px;
   border: 2px solid royalblue;
   transition: background-color 0.3s;
 }
 .header__btn--text {
-  font-size: 2rem;
+  text-decoration: none;
+  font-size: 2.3rem;
+  padding: 1em;
   color: white;
 }
 .header__btn:hover {
   background-color: rgba(40, 57, 119, 0.9);
+}
+
+main .aboutus__box {
+  padding: 1em;
+}
+main .aboutus__img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  width: 100%;
+}
+main .aboutus__title {
+  font-size: 2rem;
+  color: royalblue;
+  margin: 10px auto;
+  text-align: center;
+}
+main .aboutus__text {
+  font-size: 1.5rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
