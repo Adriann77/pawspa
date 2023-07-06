@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'components';
+@import 'colors';
 
 *,
 *::after,
@@ -27,9 +28,11 @@ body {
   left: 10px;
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
-  color: royalblue;
-  letter-spacing: 2px;
+  font-weight: bold;
+  color: $main-color;
+  letter-spacing: 3px;
   z-index: 1000;
+  text-shadow: 0px 0px 1px black;
 }
 
 //NAV
@@ -51,7 +54,6 @@ body {
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    
   }
 
   &__item {
@@ -107,7 +109,7 @@ body {
     &--text {
       text-decoration: none;
       font-size: 2.3rem;
-        padding: 1em;
+      padding: 1em;
       color: white;
     }
 
@@ -117,55 +119,83 @@ body {
   }
 }
 
-
 // MAIN
 
-main{
+main {
+  //aboutus
 
-
-//aboutus 
-
-.aboutus{
-
-    &__box{
-        padding: 1em;
+  .aboutus {
+    &__box {
+      padding: 1em;
     }
 
-   &__img{
-    
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    width: 100%;
-   }
+    &__img {
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      width: 100%;
+    }
 
-   &__title{
-    font-size: 2rem;
-    color: royalblue;
-    margin: 10px auto;
-    text-align: center;
-   }
-   &__text{
-    font-size: 1.5rem;    
-    text-align: center;
-   }
-
-
+    &__title {
+      font-size: 2rem;
+      color: royalblue;
+      margin: 10px auto;
+      text-align: center;
+    }
+    &__text {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
 }
 
+// contact
 
+.contact {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
+  .socials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+    font-size: 2rem;
 
+    h3 {
+      margin-bottom: 10px;
+    }
 
+    i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: black;
+    }
+  }
 
+  .adres {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
 
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
 
+  .phone {
+    display: flex;
+    flex-direction: column;
 
-
-
-
-
-
-
-
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    word-wrap: break-word;
+    padding-bottom: 1em;
+  }
 }
