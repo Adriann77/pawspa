@@ -2,6 +2,10 @@ const hamburger = document.querySelector('.hamburger')
 const nav = document.querySelector('.nav')
 const navLinks = document.querySelectorAll('.nav__item')
 const BgBtn = document.querySelector('.header__btn')
+const footerYear = document.querySelector('.footer-year')
+const currYear =  new Date().getFullYear();
+
+console.log(currYear);
 
 const handleNav = () => {
   hamburger.classList.toggle('hamburger--active')
@@ -22,3 +26,5 @@ hamburger.addEventListener('click', hideBtn)
 navLinks.forEach(item =>
   item.addEventListener('click', () => nav.classList.remove('nav--active'))
 )
+
+footerYear.textContent =  currYear

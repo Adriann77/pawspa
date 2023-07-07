@@ -199,3 +199,18 @@ main {
     padding-bottom: 1em;
   }
 }
+
+
+// footer
+
+.footer{
+  height: 5vh;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    margin: 3px;
+  }
+}
