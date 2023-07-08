@@ -144,6 +144,43 @@ body {
   transform: translateX(0);
 }
 
+.black-line {
+  position: fixed;
+  top: 0;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  z-index: 300;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.on {
+  opacity: 1;
+}
+
+.desktop {
+  position: fixed;
+  z-index: 1000;
+  color: #000;
+  width: 65%;
+  top: 30px;
+  display: none;
+  right: 0;
+}
+.desktop ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.desktop ul .nav__item--desktop a {
+  text-decoration: none;
+  color: royalblue;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+
 .header {
   height: 100vh;
 }
@@ -248,4 +285,27 @@ main .aboutus__text {
 }
 .footer p {
   margin: 3px;
+}
+
+@media (min-width: 576px) {
+  main .aboutus__title {
+    font-size: 3rem;
+  }
+  main .aboutus__text {
+    font-size: 2rem;
+  }
+  main .section-title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 996px) {
+  .desktop {
+    display: inline-block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .page__title {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

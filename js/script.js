@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.nav__item')
 const BgBtn = document.querySelector('.header__btn')
 const footerYear = document.querySelector('.footer-year')
 const currYear =  new Date().getFullYear();
+const navBackground = document.querySelector('.black-line')
 
 console.log(currYear);
 
@@ -28,3 +29,16 @@ navLinks.forEach(item =>
 )
 
 footerYear.textContent =  currYear
+
+
+const addShadow = () => {
+  if(window.scrollY > 105){
+    navBackground.classList.add('on')
+  }else{
+    navBackground.classList.remove('on')
+  }
+   
+}
+
+
+window.addEventListener('scroll', addShadow)
