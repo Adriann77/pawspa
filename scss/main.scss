@@ -55,6 +55,7 @@ body {
 	width: 100%;
 	transform: translateX(100%);
 	backdrop-filter: blur(3px);
+	z-index: 900;
 	&__list {
 		position: relative;
 		display: flex;

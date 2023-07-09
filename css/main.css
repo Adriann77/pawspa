@@ -76,35 +76,107 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 95vh;
+  padding-top: 30rem;
+  margin: 0 auto;
 }
 .adopt .adopt-title {
-  margin-top: 10rem;
+  padding-top: 25rem;
   position: absolute;
-  top: -10px;
-  font-size: 3rem;
+  top: -60px;
+  font-size: 4rem;
 }
 .adopt .wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   margin-top: 5em;
+  max-width: 1600px;
 }
 .adopt .box {
-  width: 30%;
-  justify-content: center;
+  position: relative;
+  height: 450px;
+  width: 300px;
+  padding: 1rem;
+  margin: 10px;
+  background-image: url(/img/adopt/daschund-3672947_640.jpg);
+  background-size: cover;
+  background-position: 70% center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-content: flex-end;
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 30vh;
-  padding: 2em;
-  border: 1px solid black;
-  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.adopt img {
-  width: 100%;
+.adopt .box__btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 4rem;
+  background: none;
+  border: none;
+  color: royalblue;
+  text-shadow: 1px 1px 1px black;
+  cursor: help;
+  z-index: 1;
+}
+.adopt .box__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-clip-path: circle(0% at 50% 90%);
+          clip-path: circle(0% at 50% 90%);
+  text-align: center;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+.adopt .box__btn:hover {
+  transform: scale(1.1);
+}
+.adopt .box__btn:hover ~ .box__text {
+  -webkit-clip-path: circle(100% at 50% 50%);
+          clip-path: circle(100% at 50% 50%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.adopt .box__title {
+  color: royalblue;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px black;
+  padding: 60px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.adopt .two {
+  background-image: url(/img/adopt/dog-2098715_640.jpg);
+}
+.adopt .three {
+  background-image: url(/img/adopt/dog-734687_640.jpg);
+  background-position: center;
+}
+.adopt .four {
+  background-image: url(/img/adopt/french-bulldog-4019784_640.jpg);
+  background-position: center;
+}
+.adopt .fifth {
+  background-image: url(/img/adopt/iceland-dog-1977418_640.jpg);
+  background-position: center;
+}
+.adopt .sixth {
+  background-image: url(/img/adopt/jumping-3681175_640.jpg);
+  background-position: center;
 }
 
 *,
@@ -156,6 +228,7 @@ body {
   transform: translateX(100%);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  z-index: 900;
 }
 .nav__list {
   position: relative;
