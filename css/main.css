@@ -72,6 +72,41 @@
   padding: 1em;
 }
 
+.adopt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+.adopt .adopt-title {
+  margin-top: 10rem;
+  position: absolute;
+  top: -10px;
+  font-size: 3rem;
+}
+.adopt .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+.adopt .box {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  padding: 2em;
+  border: 1px solid black;
+  margin: 10px;
+}
+.adopt img {
+  width: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -100,6 +135,13 @@ body {
   letter-spacing: 3px;
   z-index: 1000;
   text-shadow: 0px 0px 1px black;
+}
+.page__title a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .nav {
@@ -335,4 +377,8 @@ main .aboutus__text {
   main .aboutus__text--second {
     text-align: left;
   }
+}
+.test {
+  height: 100vh;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
