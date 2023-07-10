@@ -6,6 +6,11 @@
 
 	margin: 0 auto;
 
+  .wrapper{
+    max-width: 1400px;
+  }
+
+
 	.adopt-title {
 		padding-top: 25rem;
 		position: absolute;
@@ -24,6 +29,7 @@
 		background-size: cover;
 		background-position: center;
     overflow: hidden;
+    margin-bottom: 10rem;
 
 		&__btn {
 			position: absolute;

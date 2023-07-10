@@ -72,12 +72,51 @@
   padding: 1em;
 }
 
+.nav__item--desktop {
+  position: relative;
+  transition: 0.3s;
+}
+.nav__item--desktop::before {
+  position: absolute;
+  content: "";
+  height: 3%;
+  background-color: royalblue;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.nav__item--desktop:hover a {
+  color: white !important;
+}
+
+.nav__item--desktop:hover::before {
+  height: 100%;
+  animation: test 0.1s linear forwards;
+}
+
+@keyframes test {
+  from {
+    width: 20%;
+    height: 3%;
+  }
+  to {
+    width: 120%;
+    height: 100%;
+  }
+}
 .adopt {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 30rem;
   margin: 0 auto;
+}
+.adopt .wrapper {
+  max-width: 1400px;
 }
 .adopt .adopt-title {
   padding-top: 25rem;
@@ -96,6 +135,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  margin-bottom: 10rem;
 }
 .adopt .box__btn {
   position: absolute;
