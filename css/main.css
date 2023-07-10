@@ -481,6 +481,10 @@ main .aboutus__text {
   main .aboutus__text--second {
     text-align: left;
   }
+  .header__bg {
+    background-image: url(/img/adopt/yorkbg.jpg);
+    z-index: -1;
+  }
 }
 .test {
   height: 100vh;

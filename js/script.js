@@ -7,7 +7,6 @@ const currYear = new Date().getFullYear()
 const navBackground = document.querySelector('.black-line')
 const adoptTitle = document.querySelector('.adopt-title')
 
-
 console.log(currYear)
 
 const handleNav = () => {
@@ -20,16 +19,16 @@ const navList = () => {
 
 const hideBtn = () => {
 	BgBtn.classList.toggle('hide')
-	
 }
 
 hamburger.addEventListener('click', handleNav)
 hamburger.addEventListener('click', navList)
 hamburger.addEventListener('click', hideBtn)
 
-
-
-navLinks.forEach(item => item.addEventListener('click', () => nav.classList.remove('nav--active')))
+navLinks.forEach(item => item.addEventListener('click', () => {
+	nav.classList.remove('nav--active')
+	handleNav()
+}))
 
 footerYear.textContent = currYear
 
