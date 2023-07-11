@@ -11,7 +11,7 @@
 	}
 
 	&__bg {
-		background-image: url(/img/people-4050698_640.jpg);
+		background-image: url(../img/dog-734688_1920.jpg);
 		width: 100%;
 		padding: 12rem auto;
 		background-position: center;
@@ -84,14 +84,11 @@
 		cursor: pointer;
 		color: white;
 		text-shadow: 0 2px 1px #000;
-    transition: all .3s;
+		transition: all 0.3s;
 
-
-    &:hover{
-      background-color: #2973c3;
-      color: gold;
-    }
-		
+		&:hover {
+			background-color: #2973c3;
+			color: gold;
+		}
 	}
-
 }
