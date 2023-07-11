@@ -6,8 +6,11 @@ const footerYear = document.querySelector('.footer-year')
 const currYear = new Date().getFullYear()
 const navBackground = document.querySelector('.black-line')
 const adoptTitle = document.querySelector('.adopt-title')
+const modalName = document.querySelector('#name')
+const modalLastName = document.querySelector('#Last-name')
+const modalEmail = document.querySelector('#email')
 
-console.log(currYear)
+
 
 const handleNav = () => {
 	hamburger.classList.toggle('hamburger--active')
