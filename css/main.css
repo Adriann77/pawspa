@@ -112,7 +112,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 30rem;
+  padding-top: 20rem;
+  height: 95vh;
   margin: 0 auto;
 }
 .adopt .wrapper {
@@ -121,7 +122,7 @@
 .adopt .adopt-title {
   padding-top: 25rem;
   position: absolute;
-  top: -30px;
+  top: -130px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 4rem;
@@ -135,7 +136,7 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  margin-bottom: 10rem;
+  margin-bottom: 7.2em;
 }
 .adopt .box__btn {
   position: absolute;
@@ -208,6 +209,10 @@
 .adopt .sixth {
   background-image: url(/img/adopt/jumping-3681175_640.jpg);
   background-position: center;
+}
+
+.support-us {
+  height: 95vh;
 }
 
 *,
@@ -323,7 +328,7 @@ body {
 .desktop ul .nav__item--desktop a {
   text-decoration: none;
   color: royalblue;
-  font-size: 3.2rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
@@ -457,6 +462,8 @@ main .aboutus__text {
 }
 
 .footer {
+  position: static;
+  bottom: 0;
   height: 5vh;
   background-color: #000;
   color: white;

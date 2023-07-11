@@ -2,6 +2,7 @@
 @import 'components';
 @import 'colors';
 @import 'adropt';
+@import 'support';
 
 *,
 *::after,
@@ -127,7 +128,7 @@ body {
 			a {
 				text-decoration: none;
 				color: royalblue;
-				font-size: 3.2rem;
+				font-size: 3rem;
 				text-transform: uppercase;
 			}
 		}
@@ -295,6 +296,8 @@ main {
 // footer
 
 .footer {
+	position: static;
+	bottom: 0;
 	height: 5vh;
 	background-color: #000;
 	color: white;
