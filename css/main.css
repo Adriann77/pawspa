@@ -235,6 +235,85 @@
   text-decoration: underline;
 }
 
+.volunter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.volunter__box {
+  height: 95vh;
+  width: 100%;
+  display: flex;
+}
+.volunter__bg {
+  background-image: url(/img/people-4050698_640.jpg);
+  width: 100%;
+  padding: 12rem auto;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 50px;
+}
+.volunter__title {
+  color: royalblue;
+  font-size: 2.3rem;
+  text-shadow: 1px 1px 3px #000;
+}
+.volunter__text {
+  color: white;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 3px #000;
+}
+.volunter__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.volunter .modal__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  padding: 1rem 6rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  background: rgb(17, 59, 78);
+  background: linear-gradient(90deg, rgb(17, 59, 78) 10%, rgb(0, 212, 255) 35%, rgb(6, 155, 189) 70%, rgb(18, 48, 65) 90%);
+}
+.volunter input {
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.volunter label {
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 8px;
+  color: royalblue;
+  text-shadow: 0 2px 1px #000;
+}
+.volunter .modal__btn {
+  position: relative;
+  background: none;
+  border-radius: 8px;
+  padding: 0.75em;
+  font-size: 2rem;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 2px 1px #000;
+  transition: all 0.3s;
+}
+.volunter .modal__btn:hover {
+  background-color: #2973c3;
+  color: gold;
+}
+
 *,
 *::after,
 *::before {
