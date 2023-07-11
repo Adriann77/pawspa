@@ -50,7 +50,27 @@
 	.header {
 		&__bg {
 			background-image: url(/img/adopt/yorkbg.jpg);
-      z-index: -1;
+			z-index: -1;
+		}
+	}
+
+	.support-us {
+		padding-top: 15rem;
+		.support-us__ul {
+			max-width: 1200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__li-item {
+			text-align: center;
+
+			font-size: 2rem;
+		}
+		&__li-item::first-letter {
+			font-size: 3rem;
 		}
 	}
 }
