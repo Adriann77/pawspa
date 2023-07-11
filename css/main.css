@@ -181,25 +181,25 @@
   text-transform: uppercase;
 }
 .adopt .one {
-  background-image: url(/img/adopt/daschund-3672947_640.jpg);
+  background-image: url(../img/adopt/daschund-3672947_640.jpg);
 }
 .adopt .two {
-  background-image: url(/img/adopt/dog-2098715_640.jpg);
+  background-image: url(../img/adopt/dog-2098715_640.jpg);
 }
 .adopt .three {
-  background-image: url(/img/adopt/dog-734687_640.jpg);
+  background-image: url(../img/adopt/dog-734687_640.jpg);
   background-position: center;
 }
 .adopt .four {
-  background-image: url(/img/adopt/french-bulldog-4019784_640.jpg);
+  background-image: url(../img/adopt/french-bulldog-4019784_640.jpg);
   background-position: center;
 }
 .adopt .fifth {
-  background-image: url(/img/adopt/iceland-dog-1977418_640.jpg);
+  background-image: url(../img/adopt/iceland-dog-1977418_640.jpg);
   background-position: center;
 }
 .adopt .sixth {
-  background-image: url(/img/adopt/jumping-3681175_640.jpg);
+  background-image: url(../img/adopt/jumping-3681175_640.jpg);
   background-position: center;
 }
 
@@ -247,7 +247,7 @@
   display: flex;
 }
 .volunter__bg {
-  background-image: url(../img/dog-734688_1920.jpg);
+  background-image: url(../img/people-4050698_640.jpg);
   width: 100%;
   padding: 12rem auto;
   background-position: center;
@@ -638,7 +638,7 @@ main .aboutus__text {
     text-align: left;
   }
   .header__bg {
-    background-image: url(/img/adopt/yorkbg.jpg);
+    background-image: url(../img/adopt/yorkbg.jpg);
     z-index: -1;
   }
   .support-us {
