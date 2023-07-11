@@ -269,6 +269,22 @@ body {
   top: 0;
   left: 0;
 }
+.page__title a::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 40%;
+  background-color: royalblue;
+  right: 0;
+  bottom: 0;
+  transition: width 0.3s;
+}
+.page__title a:hover::after {
+  width: 75%;
+}
+.page__title a:hover + i {
+  color: red;
+}
 
 .nav {
   position: fixed;
