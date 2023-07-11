@@ -343,22 +343,56 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 10;
   cursor: pointer;
   height: 80px;
-  background-color: rgba(40, 57, 119, 0.8);
-  border-radius: 8px;
-  border: 2px solid royalblue;
+  background-color: transparent;
+  border: none;
   transition: background-color 0.3s;
+}
+.header__btn a {
+  padding: 1em;
 }
 .header__btn--text {
   text-decoration: none;
   font-size: 2.3rem;
   padding: 1em;
-  color: white;
+  color: black;
+  transition: font-size 0.3s;
 }
-.header__btn:hover {
-  background-color: rgba(40, 57, 119, 0.9);
+.header__btn a::before,
+.header__btn a::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  transition: width 0.3s, height 0.2s, border-radius 0.5s;
+}
+.header__btn a::before {
+  border-top: 2px solid royalblue;
+  border-left: 2px solid royalblue;
+  left: 0;
+  top: 0;
+}
+.header__btn a::after {
+  border-bottom: 2px solid royalblue;
+  border-right: 2px solid royalblue;
+  right: 0;
+  bottom: 0;
+}
+.header__btn a:hover::after {
+  border-top: 2px solid royalblue;
+  border-left: 2px solid royalblue;
+}
+.header__btn a:hover::before {
+  border-bottom: 2px solid royalblue;
+  border-right: 2px solid royalblue;
+}
+.header__btn a:hover::after,
+.header__btn a:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
 main .aboutus__box {
