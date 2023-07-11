@@ -1,40 +1,40 @@
 .support-us {
 	display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-	
-  padding: 10rem 2rem 3rem ;
-  &__ul--title{
-    font-size: 2.2rem;
-    padding-bottom: 2rem;
-  }
+	position: relative;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
 
-  &__li-item{
-    margin-bottom: 10px;
-    list-style: none;
-    text-align: left;
-    font-size: 1.8rem;
-    
-    
-  }
+	padding: 5rem 2rem 3rem;
 
-  &__li-item::first-letter{
-    color: royalblue;
-    font-size: 2rem;
-    text-decoration: underline;
-  }
+	&__ul {
+	}
 
+	&__ul--title {
+		font-size: 2.2rem;
+		padding-bottom: 3rem;
+	}
 
-  a{
-    font-size: 2rem;
-    text-decoration: none;
-    color: goldenrod;
-    text-decoration: underline;
-    
-    
-  }
+	&__li-item {
+		margin-bottom: 10px;
+		list-style: none;
 
-  
+		font-size: 1.8rem;
+		max-width: 900px;
+	}
+
+	&__li-item::first-letter {
+		color: royalblue;
+		font-size: 3rem;
+		text-decoration: underline;
+		font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+	}
+
+	a {
+		font-size: 2rem;
+		text-decoration: none;
+		color: goldenrod;
+		text-decoration: underline;
+	}
 }
