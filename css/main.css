@@ -452,7 +452,7 @@ body {
 }
 .header__bg {
   position: relative;
-  background-image: url(/img/dog-734688_1920.jpg);
+  background-image: url(../img/dog-734688_1920.jpg);
   height: 100%;
   background-position: center;
   background-size: cover;
